@@ -1,12 +1,20 @@
 # RyzeTello-face-tracking-drone
-### Using the djitellopy, openCV and tensor flow to make a face tracking drone in python
+### Using the djitellopy, openCV and tensorflow to make a face tracking drone in python
 
-#### Requirements (Modules)
+#### Requirements (Modules and data)
 
 1. tensorflow
 2. openCV
 3. io
 4. djitellopy
+5. training data:
+	- 1000+ very varied examples of the face to track (Saved in 'Faces/1/')
+	- 1000+ very varied examples of faces to ignore (Saved in 'Faces/0/')
+	- Have roughly the same number of images in Faces/0/ and Faces/1/
+6. Test data:
+	- A few examples of the face to track (Saved in 'Faces/1/')
+	- A few examples of faces to ignore (Saved in 'Faces/2 Test/')
+
 
 #### Requirements (Hardware):
 1. A Ryze Tello Drone
@@ -37,7 +45,7 @@ Improvements made on the original project by Jabrills: https://www.youtube.com/w
       
 ## Instructions:
 
-*** If you have not set up the facial recognition please do before performing these steps. This can be done using the file "Create Training Data and Train Model.ipynb". The file contains the relevant setup instructions.***
+* If you have not set up the facial recognition please do before performing these steps. This can be done using the file "Create Training Data and Train Model.ipynb". The file contains the relevant setup instructions.
     
 1. Start with the Drone Wi-Fi Disconnected (It causes issues when trying to import modules if it's connected)
 2. Import the modules
